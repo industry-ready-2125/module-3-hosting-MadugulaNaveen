@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renting Page</title>
+  <link rel="stylesheet" href="./Stylesheets/style.css">
+</head>
+<body>
+  <section class="nav" id="nav"></section>
+  <section class="renting-page">
+    <div class="fixed-width">
+      <div class="flex-row">
+        <div class="half-width flex-col book-containers">
+          <div class="heading">Your Books and Earnings</div>
+          <div class="rented-book-shelf flex-row" id="target-div1">
+            <div class="flex-row">
+            <div class="img-div"><img id="image1" src="./Images/book-1.jpeg" alt=""></div>
+            <div class="book-name">45-Day Self Improment</div>
+            </div>
+            <div class="money-earned">250/-</div>
+          </div>
+          <div class="rented-book-shelf flex-row" id="target-div2">
+            <div class="flex-row">
+              <div class="img-div"><img id="image2" src="./Images/book-2.jpg" alt=""></div>
+              <div class="book-name">365-Day Self Improment</div>
+            </div>
+            <div class="money-earned">250/-</div>
+          </div>
+          <div class="rented-book-shelf flex-row" id="target-div3">
+            <div class="flex-row">
+              <div class="img-div"><img id="image3" src="./Images/book-3.jpg" alt=""></div>
+              <div class="book-name">Me vs Brain</div>
+            </div>
+            <div class="money-earned">250/-</div>
+          </div>
+          <div class="rented-book-shelf flex-row" id="target-div4">
+            <div class="flex-row">
+              <div class="img-div"><img id="image4" src="./Images/book-4.png" alt=""></div>
+              <div class="book-name">Own It</div>
+            </div>
+            <div class="money-earned">250/-</div>
+          </div>
+        </div>
+        <div class="half-width flex-col book-containers">
+          <div class="heading">ADD NEW BOOK</div>
+
+          <div class="flex-row width-100"><label for="Name">Name : </label>
+          <input type="text"></div>
+          <div class="flex-row width-100"><label for="Age">Book Condition : </label>
+          <input type="text"></div>
+          <div class="flex-row width-100"><label for="file-upload">Photo : </label>
+          <input type="file" id="file-upload" accept="image/*"></div>
+          <div class="flex-row width-100">
+            <label for="my-textarea">Description : </label>
+<textarea id="my-textarea" name="message" rows="4" cols="35"></textarea>
+
+          </div>
+          <button>ADD Book</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

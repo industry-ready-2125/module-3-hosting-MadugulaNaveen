@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookart</title>
+  <link rel="stylesheet" href="./Stylesheets/style.css">
+</head>
+<body>
+  <section class="nav" id="nav"></section>
+  <section class="landing-page">
+    <div class="fixed-width flex-row">
+    <div class="leftpart halfwidth">
+    <div class="quote">
+      <div>Read</div>
+      <div>Never Stop</div>
+      <div>Reading...</div>
+    </div>
+    <button class="bg-biscuit" id="get-started">Get Started</button>
+  </div>
+    <div class="half-width">
+      <img src="./Images/VectorImage.avif" alt="">
+    </div>
+    </div>
+  </section>
+
+  <script>
+    // Directing the user to booking page
+    const getstartedbtn = document.getElementById("get-started");
+    // on clicking the getstartedbtn it should direct to booking page
+    getstartedbtn.addEventListener("click", function() {
+      window.location.href = "booking.html";
+    }
+    );
+  </script>
+  <script src="./app.js"></script>
+</body>
+</html>

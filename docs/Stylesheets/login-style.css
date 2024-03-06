@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.display-flex-dr-row{
+    display: flex;
+    flex-direction: row;
+}
+.display-flex-dr-col{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 50em;
+    height: 30em;
+    position: relative;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    margin: 20vh 20vw;
+}
+.items{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.login-text{
+    align-items: center;
+    text-align: center;
+    padding-top: 30%;
+    position: relative;
+    z-index: 2f;
+    left: 0px;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+}
+h1{
+    font-size: 2.5em;
+    font-weight: 680;
+    margin-bottom: 4%;
+}
+input{
+    width: 80%;
+    height: 3em;
+    margin: 2%;
+    border: none;
+    padding-left: 4%;
+    background-color: rgb(221, 220, 220);
+}
+input[type="button"]{
+    width: 40%;
+    padding: 0;
+    background-color:  beige;
+    color: black;
+    font-weight: bolder;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* .rightside{
+    background-color: transparent;
+} */
+.login-info{
+    height: 100%;
+    background-color: #a1a157;
+    display: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+.signup-text{
+    background-color: #a1a157;
+    z-index: 2;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
+}
+.signup-text,.login-info{
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 40% 8% 0% 8%;
+}
+.signup-text p,.login-info p{
+    margin-top:5%;
+    line-height: 1.5em;
+}
+.signup-text input[type="button"],.login-info input[type="button"]{
+    margin-top: 10%;
+    border: 1px solid white;
+}
+.signup-info{
+    align-items: center;
+    text-align: center;
+    padding-top: 30%;
+    display: none;
+    transform: translateX(-80%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.container.animation-class .login-info{
+    transform: translateX(0%);
+    z-index: 5;
+}
+
+.container.animation-class .signup-info{
+    transform: translateX(0%);
+}
